@@ -22,7 +22,7 @@ namespace NJsonSchema.CodeGeneration.TypeScript
         /// <returns>The new name.</returns>
         public virtual string Generate(JsonSchemaProperty property)
         {
-            var name = ConversionUtilities.ConvertToLowerCamelCase(property.Name
+            var name = ConversionUtilities.ConvertToUpperCamelCase(property.Name
                     .Replace("\"", string.Empty)
                     .Replace("@", string.Empty)
                     .Replace("?", string.Empty)
